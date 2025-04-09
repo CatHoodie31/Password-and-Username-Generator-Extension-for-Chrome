@@ -1,0 +1,156 @@
+body {
+  font-family: 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif; /* Додано підтримку емодзі */
+  background: #121212; /* Темний фон */
+  color: #e0e0e0; /* Світлий текст */
+  margin: 0;
+  padding: 20px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.settings {
+  background: #1e1e1e; /* Темний блок */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #333; /* Легка рамка */
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+  color: #b0b0b0; /* Світліший текст */
+}
+
+label.password-settings {
+  font-size: 14px; /* Такий самий розмір, як у "Password Length:" */
+  font-weight: bold; /* Робить текст жирним */
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: #2a2a2a; /* Темний фон */
+  color: #e0e0e0; /* Світлий текст */
+  border: 1px solid #444; /* Рамка */
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px; /* Змінено розмір шрифту */
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin-bottom: 5px; /* Додано для вирівнювання */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Відстань між текстом і текстовим полем */
+}
+
+.input-group label {
+  white-space: nowrap; /* Запобігає переносу тексту */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #4caf50, #81c784); /* Зелений градієнт */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.output-group {
+  margin-top: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Відстань між групами пароля та імені */
+}
+
+.output-group p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #b0b0b0;
+}
+
+.output-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Відстань між текстовим блоком і кнопкою */
+}
+
+.output {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif; /* Додано Noto Color Emoji */
+  padding: 10px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #e0e0e0;
+  border-radius: 5px;
+  font-size: 14px;
+  word-break: break-word;
+  flex: none; /* Вимикає автоматичне розтягування */
+  width: 285px; /* Фіксована ширина */
+  height: 20px; /* Фіксована висота */
+  overflow: hidden; /* Приховує текст, що виходить за межі */
+  text-overflow: ellipsis; /* Додає три крапки, якщо текст не вміщується */
+  display: flex;
+  align-items: center; /* Вирівнювання тексту по вертикалі */
+  justify-content: center; /* Вирівнювання тексту по горизонталі */
+}
+
+.copy-btn {
+  background: linear-gradient(135deg, #4caf50, #81c784); /* Зелений градієнт */
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%; /* Робить кнопку круглою */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Фіксований розмір кнопки */
+  height: 40px; /* Фіксований розмір кнопки */
+}
+
+.copy-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.copy-btn img {
+  width: 18px;
+  height: 18px;
+}
